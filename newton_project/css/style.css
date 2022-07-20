@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+#togle{
+    display: none;
+}
+#togle .fa-white{
+   
+    font-size: 2rem;
+    border: 1px solid rgb(187, 151, 221);
+    color: rgb(48, 93, 151);
+    padding: .3rem .8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+#togle .fa-white:hover{
+    color:red;
+}
+.container{
+    padding:0 7rem;
+     background-color: rgb(238, 241, 241);
+}
+nav{
+    padding:1rem 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+h5{
+    letter-spacing: .03rem;
+    font-size: 1.2rem;
+}
+.recipeText{
+    letter-spacing: .05rem;
+    color:rgb(57, 55, 55);
+}
+div.menubar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+span{
+    color:rgb(89, 35, 225);
+}
+.logo h1{
+    font-size: 2rem;
+}
+ul li{
+    list-style-type: none;
+    margin-bottom: .5rem;
+    letter-spacing: .05rem;
+}
+ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color:rgb(82, 82, 82);
+}
+
+div.menu ul.topNav li{
+    display: inline;
+    margin-left:2rem;
+}
+.btn{
+  background-color:rgb(89, 35, 225);
+  color: white;
+  padding:.5rem 1.6rem;
+  border: none;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+/******************nav end********************/
+/***start banner********************************/
+header{
+    margin:3rem 0;
+}
+div.banner{
+    width:100%;
+    height:60vh;
+    
+}
+.banner img{
+    height:100%;
+    width:100%;
+    border-radius: .3rem;
+    opacity: .7;
+}
+.bannerText{
+    position: absolute;
+    top:40%;
+    left:30%;
+}
+.text1,.text2{
+    color:rgb(250, 248, 248);
+}
+.text1{
+    font-size: 4rem;
+}
+.text2{
+    font-size: 2rem;
+}
+/**********************footer***************************/
+footer{
+    background-color: rgb(58, 57, 57);
+    padding: 1.5rem .5rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .01rem;
+    word-spacing: .2rem;
+}
+
+/**************************section*****************************/
+section{
+    display: flex;
+    justify-content: space-between;
+
+}
+div.sidebar{
+    width:20%;
+    /* border:1px solid blue; */
+}
+div.main{
+    width:75%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction:row;
+     flex-wrap: wrap; 
+     justify-content: space-between;
+}
+div.content{
+    margin: 5px;
+  /* border: 1px solid #ccc; */
+  float: left;
+  width: 30%;
+}
+div.content img{
+    height:auto;
+    width:100%;
+    border-radius: .2rem;
+}
+/************************tags page css*************************/
+div.tags{
+    height:100vh;
+}
+div.recipe{
+    width:30%;
+    /* border:1px solid blue; */
+    display: inline-block;
+    text-align: center;
+    padding:1rem 2rem;
+    background-color: rgb(49, 41, 62);
+    color:white;
+    cursor: pointer;
+    border-radius: .3rem;
+    margin-left:1rem;
+    margin-bottom: 1rem;
+}
+div.recipe h3 a{
+    color:white;
+    text-decoration: none;
+}
+/*********************about images*********************/
+div.aboutContent{
+    display:flex;
+    justify-content: space-between;
+}
+div.about_image, div.about_text{
+width:50%;
+padding:3rem;
+}
+
+div.about_image img{
+    width:100%;
+    height:100%;
+    border-radius: .3rem;
+}
+@media screen and (max-width:891px) {
+    html{
+        font-size:70%;
+    }
+}
+@media screen and (max-width:627px) {
+    html{
+        font-size:60%;
+    }
+    div.container{
+        margin: 0;
+        padding:.5rem;
+    }
+}
+@media screen and (max-width:421px) {
+    div.container{
+        margin: 0;
+        padding:.5rem;
+    }
+    div.menu ul.topNav li{
+        display: block;
+        margin-left:0;
+    }
+    section{
+        display: block;
+    }
+    div.sidebar,div.main{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    div.content{
+        width:100%;
+        margin:2rem;
+    }
+    div.content h5{
+        font-size: 2rem;
+    }
+    div.content p{
+        font-size: 2rem;
+    }
+    div.tags{
+        display: flex;
+        flex-direction: column;
+    }
+    div.recipe{
+        width:100%;
+    }
+    div.menubar{
+        display: block;
+    }
+    div.aboutContent{
+        display: flex;
+        flex-direction: column;
+    }
+    div.about_image, div.about_text{
+        width:100%
+    }
+    div.content img{
+        width:90%;
+    }
+    div.menu ul.topNav{
+        display: none;
+    }
+    #togle{
+        display: block;
+    }
+}
